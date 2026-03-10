@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>NexusLink</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<header class="header">
+    <div class="user-info">
+        <span class="user-email" id="userEmail">Usuario@exemplo.com</span>
+        <button class="logout-btn" onclick="logout()">Sair</button>
+    </div>
+
+    <img src="assets/logo.png" class="logo">
+    <h2 class="subtitle">Text generator with AI</h2>
+</header>
+
+
+<div class="container">
+
+<div class="left">
+
+<input id="produto" placeholder="Nome do produto">
+
+<input id="valorReal" placeholder="Valor real do produto">
+
+<input id="valorPromo" placeholder="Valor em promoção">
+
+<select id="loja">
+
+<option value="">Selecione a loja</option>
+<option>Mercado Livre</option>
+<option>Shopee</option>
+<option>Amazon</option>
+<option>Magazine Luiza</option>
+
+</select>
+
+<input id="cupom" placeholder="Cupom (opcional)">
+
+<input id="link" placeholder="Link do produto">
+
+<button onclick="gerarOferta()">Gerar texto com IA</button>
+
+</div>
+
+
+<div class="right">
+
+<h3>Prévia da Oferta</h3>
+
+<textarea id="previewOferta"></textarea>
+
+<button onclick="compartilharWhatsapp()">
+<i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp
+</button>
+
+</div>
+
+
+<div class="ofertas-container">
+
+<div class="oferta-card">
+
+<h3>Oferta 1</h3>
+
+<textarea id="oferta1"></textarea>
+
+<button onclick="copiarTexto('oferta1')">Copiar</button>
+
+</div>
+
+<div class="oferta-card">
+
+<h3>Oferta 2</h3>
+
+<textarea id="oferta2"></textarea>
+
+<button onclick="copiarTexto('oferta2')">Copiar</button>
+
+</div>
+
+<div class="oferta-card">
+
+<h3>Oferta 3</h3>
+
+<textarea id="oferta3"></textarea>
+
+<button onclick="copiarTexto('oferta3')">Copiar</button>
+
+</div>
+
+<div class="oferta-card">
+
+<h3>Oferta 4</h3>
+
+<textarea id="oferta4"></textarea>
+
+<button onclick="copiarTexto('oferta4')">Copiar</button>
+
+</div>
+
+</div>
+
+
+<a class="whatsapp-suporte"
+href="https://wa.me/5551993266652"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i> Suporte
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

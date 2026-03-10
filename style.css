@@ -1,0 +1,175 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#0b101d;
+color:rgba(253, 253, 253, 0.986);
+font-family:"Inter",sans-serif;
+padding:40px;
+text-align:center;
+
+}
+
+.header{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+.logo{
+width:600px;
+}
+
+.subtitle{
+margin-top:-140px;
+color:#fbfbfc;
+}
+
+.container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+
+}
+
+.left,
+.right{
+
+background:#111827;
+padding:20px;
+border-radius:15px;
+width:350px;
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+input,select{
+
+padding:12px;
+border-radius:6px;
+border:none;
+
+}
+
+textarea{
+
+font-family: 'Orbitron', sans-serif;
+height:140px;
+padding:12px;
+border-radius:6px;
+border:none;
+resize:none;
+
+}
+
+button{
+
+padding:12px;
+border:none;
+border-radius:6px;
+background:#22c55e;
+color:black;
+font-weight:600;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#16a34a;
+
+}
+
+.ofertas-container{
+
+margin-top:40px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+.oferta-card{
+
+background:#111827;
+padding:20px;
+border-radius:10px;
+width:280px;
+display:flex;
+flex-direction:column;
+gap:10px;
+
+}
+
+.whatsapp-suporte{
+
+position:fixed;
+bottom:20px;
+right:20px;
+background:#119742;
+color:rgb(255, 255, 255);
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+
+}
+
+.oferta-card textarea{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+
+}
+
+.oferta-card textarea{
+
+font-family: 'Orbitron', sans-serif;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 1.6;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    position: absolute; /* Fica no topo da página */
+    top: 0;
+    left: 0;
+    color: #e4e4e7;
+}
+
+.user-email {
+    font-weight: 500;
+}
+
+.logout-btn {
+    padding: 5px 12px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #ff1a1a;
+}
