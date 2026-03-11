@@ -4,76 +4,66 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>NexusLink</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<body>
 
 <div class="header">
+
 <img src="assets/logo.png" class="logo">
+
 <p class="subtitle">Gerador de Ofertas com IA</p>
+
 </div>
 
-<header class="header">
-    <div class="user-info">
-        <span class="user-email" id="userEmail">Usuario@exemplo.com</span>
-        <button class="logout-btn" onclick="logout()">Sair</button>
-    </div>
+<div class="user-info">
 
-    <img src="assets/logo.png" class="logo">
-    <h2 class="subtitle">Text generator with AI</h2>
-</header>
+<span id="userEmail"></span>
 
+<button class="logout-btn" onclick="logout()">Sair</button>
+
+</div>
 
 <div class="container">
 
 <div class="left">
 
-<input id="produto" placeholder="Nome do produto">
+<input id="produto" placeholder="Produto">
 
-<input id="valorReal" placeholder="Valor real do produto">
+<input id="valorReal" placeholder="Preço normal">
 
-<input id="valorPromo" placeholder="Valor em promoção">
+<input id="valorPromo" placeholder="Preço promoção">
 
 <select id="loja">
-
-<option value="">Selecione a loja</option>
 <option>Mercado Livre</option>
-<option>Shopee</option>
 <option>Amazon</option>
+<option>Shopee</option>
 <option>Magazine Luiza</option>
-
 </select>
 
-<input id="cupom" placeholder="Cupom (opcional)">
+<input id="cupom" placeholder="Cupom">
 
-<input id="link" placeholder="Link do produto">
+<input id="link" placeholder="Link afiliado">
 
 <button onclick="gerarOferta()">Gerar texto com IA</button>
 
 </div>
 
-
 <div class="right">
 
-<h3>Prévia da Oferta</h3>
+<textarea id="previewOferta" placeholder="Prévia da oferta"></textarea>
 
-<textarea id="previewOferta"></textarea>
-
-<button onclick="compartilharWhatsapp()">
-<i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp
-</button>
+<button onclick="compartilharWhatsapp()">Compartilhar WhatsApp</button>
 
 </div>
 
+</div>
 
 <div class="ofertas-container">
 
@@ -119,17 +109,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 </div>
 
+<a class="whatsapp-suporte" href="#">Suporte</a>
 
-<a class="whatsapp-suporte"
-href="https://wa.me/5551993266652"
-target="_blank">
-
-<i class="fab fa-whatsapp"></i> Suporte
-
-</a>
-
-<script src="script.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
-
