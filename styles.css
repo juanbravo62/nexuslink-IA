@@ -2,187 +2,174 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#020d1f;
-color:white;
+
+background:#0b101d;
+color:rgba(253, 253, 253, 0.986);
+font-family:"Inter",sans-serif;
+padding:40px;
+text-align:center;
+
 }
 
-/* TOPO */
+.header{
 
-.topo{
 display:flex;
-justify-content:space-between;
+flex-direction:column;
 align-items:center;
-padding:15px;
+
 }
 
-.sair{
-background:#ff4d4d;
-border:none;
-padding:6px 12px;
-border-radius:6px;
-color:white;
-cursor:pointer;
+.logo{
+width:600px;
 }
 
-/* CONTAINER PRINCIPAL */
+.subtitle{
+margin-top:-140px;
+color:#fbfbfc;
+}
 
 .container{
+
 display:flex;
-gap:30px;
-padding:20px;
 justify-content:center;
-align-items:flex-start;
+gap:30px;
+margin-top:40px;
 flex-wrap:wrap;
+
 }
 
-/* FORM */
+.left,
+.right{
 
-.form-box{
-background:#0c1a33;
+background:#111827;
 padding:20px;
-border-radius:10px;
+border-radius:15px;
 width:350px;
 display:flex;
 flex-direction:column;
-gap:12px;
+gap:15px;
+
 }
 
-.form-box input,
-.form-box select{
+input,select{
+
+padding:12px;
+border-radius:6px;
+border:none;
+
+}
+
+textarea{
+
+font-family: 'Orbitron', sans-serif;
+height:140px;
+padding:12px;
+border-radius:6px;
+border:none;
+resize:none;
+
+}
+
+button{
+
 padding:12px;
 border:none;
 border-radius:6px;
-font-size:14px;
-}
-
-.gerar{
 background:#22c55e;
-border:none;
-padding:12px;
-border-radius:6px;
-color:white;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* PREVIEW */
-
-.preview-box{
-background:#0c1a33;
-padding:20px;
-border-radius:10px;
-width:350px;
-}
-
-.preview-card{
-background:white;
 color:black;
-padding:15px;
-border-radius:8px;
-margin-top:10px;
-}
-
-.whats{
-background:#22c55e;
-border:none;
-padding:12px;
-border-radius:6px;
-color:white;
-width:100%;
-margin-top:10px;
+font-weight:600;
 cursor:pointer;
+
 }
 
-/* OFERTAS */
+button:hover{
+
+background:#16a34a;
+
+}
 
 .ofertas-container{
+
+margin-top:40px;
 display:flex;
+flex-wrap:wrap;
 justify-content:center;
 gap:20px;
-flex-wrap:wrap;
-padding:20px;
+
 }
 
 .oferta-card{
-background:#0c1a33;
-padding:15px;
+
+background:#111827;
+padding:20px;
 border-radius:10px;
-width:220px;
-text-align:center;
+width:280px;
+display:flex;
+flex-direction:column;
+gap:10px;
+
 }
 
-.oferta-texto{
-background:white;
-color:black;
-padding:10px;
-border-radius:6px;
-margin:10px 0;
-}
+.whatsapp-suporte{
 
-.copiar{
-background:#22c55e;
-border:none;
-padding:10px;
-border-radius:6px;
-color:white;
-width:100%;
-cursor:pointer;
-}
-
-/* BOTAO SUPORTE */
-
-.suporte{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#22c55e;
-color:white;
-padding:10px 15px;
-border-radius:20px;
+background:#119742;
+color:rgb(255, 255, 255);
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+
 }
 
-/* ===================== */
-/* RESPONSIVO CELULAR */
-/* ===================== */
+.oferta-card textarea{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
 
-@media (max-width:768px){
-
-.container{
-flex-direction:column;
-padding:15px;
 }
 
-.form-box,
-.preview-box{
-width:100%;
+.oferta-card textarea{
+
+font-family: 'Orbitron', sans-serif;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 1.6;
+
 }
 
-.form-box input,
-.form-box select{
-font-size:16px;
-padding:14px;
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    position: absolute; /* Fica no topo da página */
+    top: 0;
+    left: 0;
+    color: #e4e4e7;
 }
 
-.gerar{
-font-size:16px;
-padding:14px;
+.user-email {
+    font-weight: 500;
 }
 
-.preview-card{
-font-size:15px;
+.logout-btn {
+    padding: 5px 12px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.ofertas-container{
-flex-direction:column;
-align-items:center;
-}
-
-.oferta-card{
-width:90%;
-}
-
+.logout-btn:hover {
+    background-color: #ff1a1a;
 }
