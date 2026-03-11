@@ -4,61 +4,68 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>NexusLink</title>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<body>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<div class="topo">
-<span>seuemail@email.com</span>
-<button class="sair">Sair</button>
-</div>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<header class="header">
+    <div class="user-info">
+        <span class="user-email" id="userEmail">Usuario@exemplo.com</span>
+        <button class="logout-btn" onclick="logout()">Sair</button>
+    </div>
+
+    <img src="assets/logo.png" class="logo">
+    <h2 class="subtitle">Text generator with AI</h2>
+</header>
 
 
 <div class="container">
 
-<div class="form-box">
+<div class="left">
 
-<input placeholder="Produto">
+<input id="produto" placeholder="Nome do produto">
 
-<input placeholder="Preço antigo">
+<input id="valorReal" placeholder="Valor real do produto">
 
-<input placeholder="Preço novo">
+<input id="valorPromo" placeholder="Valor em promoção">
 
-<select>
+<select id="loja">
+
+<option value="">Selecione a loja</option>
 <option>Mercado Livre</option>
-<option>Amazon</option>
 <option>Shopee</option>
+<option>Amazon</option>
 <option>Magazine Luiza</option>
+
 </select>
 
-<input placeholder="Cupom (opcional)">
+<input id="cupom" placeholder="Cupom (opcional)">
 
-<input placeholder="Link afiliado">
+<input id="link" placeholder="Link do produto">
 
-<button class="gerar">Gerar texto com IA</button>
+<button onclick="gerarOferta()">Gerar texto com IA</button>
 
 </div>
 
 
-<div class="preview-box">
+<div class="right">
 
 <h3>Prévia da Oferta</h3>
 
-<div class="preview-card">
-Texto gerado aparece aqui
-</div>
+<textarea id="previewOferta"></textarea>
 
-<button class="whats">
-Compartilhar no WhatsApp
+<button onclick="compartilharWhatsapp()">
+<i class="fab fa-whatsapp"></i> Compartilhar no WhatsApp
 </button>
-
-</div>
 
 </div>
 
@@ -69,22 +76,54 @@ Compartilhar no WhatsApp
 
 <h3>Oferta 1</h3>
 
-<div class="oferta-texto">
-Texto da oferta
-</div>
+<textarea id="oferta1"></textarea>
 
-<button class="copiar">
-Copiar
-</button>
+<button onclick="copiarTexto('oferta1')">Copiar</button>
 
 </div>
 
+<div class="oferta-card">
+
+<h3>Oferta 2</h3>
+
+<textarea id="oferta2"></textarea>
+
+<button onclick="copiarTexto('oferta2')">Copiar</button>
+
+</div>
+
+<div class="oferta-card">
+
+<h3>Oferta 3</h3>
+
+<textarea id="oferta3"></textarea>
+
+<button onclick="copiarTexto('oferta3')">Copiar</button>
+
+</div>
+
+<div class="oferta-card">
+
+<h3>Oferta 4</h3>
+
+<textarea id="oferta4"></textarea>
+
+<button onclick="copiarTexto('oferta4')">Copiar</button>
+
+</div>
+
 </div>
 
 
-<div class="suporte">
-Suporte
-</div>
+<a class="whatsapp-suporte"
+href="https://wa.me/5551993266652"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i> Suporte
+
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
